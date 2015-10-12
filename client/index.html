@@ -13,6 +13,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+      <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
@@ -46,12 +48,54 @@
     <![endif]-->
     <!-- build:js({client,node_modules}) app/vendor.js -->
       <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-canvas-painter/dist/angular-canvas-painter.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+      <script src="bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/momentjs/moment.js"></script>
+      <script src="bower_components/humanize-duration/humanize-duration.js"></script>
+      <script src="bower_components/angular-timer/dist/angular-timer.js"></script>
+      <script src="bower_components/lodash/lodash.js"></script>
+      <script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+      <script src="bower_components/ng-simplePagination/simplePagination.js"></script>
+      <script src="bower_components/materialize/bin/materialize.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/account/account.js"></script>
+          <script src="app/account/login/login.js"></script>
+          <script src="app/account/settings/settings.js"></script>
+          <script src="app/account/signup/signup.js"></script>
+          <script src="app/admin/admin.js"></script>
+          <script src="app/badges/badges.js"></script>
+          <script src="app/classreport/classreport.js"></script>
+          <script src="app/classroom/classroom.js"></script>
+          <script src="app/course/course.js"></script>
+          <script src="app/dashboard/dashboard.js"></script>
+          <script src="app/exams/exams.js"></script>
+          <script src="app/help/help.js"></script>
+          <script src="app/main/main.js"></script>
+          <script src="app/manageclass/manageclass.js"></script>
+          <script src="app/notifications/notifications.js"></script>
+          <script src="app/profile/profile.js"></script>
+          <script src="app/search/search.js"></script>
+          <script src="app/settings/settings.js"></script>
+          <script src="app/sidebar/sidebar.js"></script>
+          <script src="app/studentactivity/studentactivity.js"></script>
+          <script src="app/studentprogress/studentprogress.js"></script>
+          <script src="app/takeexam/takeexam.js"></script>
+          <script src="components/auth/auth.js"></script>
+          <script src="components/auth/user.js"></script>
+          <script src="components/mongoose-error/mongoose-error.js"></script>
+          <script src="components/navbar/navbar.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->
 </body>
