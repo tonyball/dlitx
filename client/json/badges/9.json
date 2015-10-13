@@ -1,0 +1,8 @@
+{
+	"id":"9",
+	"name":"Flag Duty",
+	"description":"Flag your first discussion post on a video or program for a Guardian's attention",
+	"image":"flag-duty.png",
+	"condition":"",
+	"group":"meteorite"
+}

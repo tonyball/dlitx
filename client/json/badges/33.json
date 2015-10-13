@@ -1,0 +1,8 @@
+{
+	"id":"33",
+	"name":"Geek of the week: mastery",
+	"description":"Finish 5 mastery challenges in a week",
+	"image":"weekly-mastery.png",
+	"condition":"",
+	"group":"moon"
+}

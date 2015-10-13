@@ -1,0 +1,33 @@
+{
+	"id":"2",
+	"username":"tonyball",
+	"password":"password",
+	"title":"นาย",
+	"firstname":"วีรภัทร",
+	"lastname":"ศิรไพบูลย์",
+	"email":"weeraphat.s@ku.th",
+	"school":"มหาวิทยาลัยเกษตรศาตร์",
+	"role":"0",
+	"gender":"ชาย",
+	"birthdate":"30/06/1994",
+	"tel":"+66819080654",
+	"education_level":"ปริญญาตรี",
+	"bio":"ศึกษาอยู่ที่ มหาวิทยาลัยเกษตรศาตร์ ปี 4 ภาควิชาวิทยาการคอมพิวเตอร์",
+	"location":"",
+	"created":"",
+	"modified":"",
+	"citizenid":"",
+	"avatar-group":"",
+	"avatar":"red2.png",
+	"classrooms":["MHM0041"],
+	"courses":["XTZ5218"],
+	"activities":[{}],
+	"badges":[
+		{"id":"1","status":1},
+		{"id":"2","status":1},
+		{"id":"30","status":1},
+		{"id":"3","status":0}
+
+	],
+	"scores":89
+}

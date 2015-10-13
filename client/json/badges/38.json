@@ -1,0 +1,8 @@
+{
+	"id":"38",
+	"name":"Power Hour",
+	"description":"Correctly answer 90 problems and watch 15 minutes of video in 1 hour",
+	"image":"power-hour.png",
+	"condition":"",
+	"group":"moon"
+}

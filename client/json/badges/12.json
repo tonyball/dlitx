@@ -1,0 +1,8 @@
+{
+	"id":"12",
+	"name":"Evaluator",
+	"description":"Evaluate a student's project",
+	"image":"meteorite.png",
+	"condition":"",
+	"group":"meteorite"
+}

@@ -1,0 +1,8 @@
+{
+	"id":"26",
+	"name":"Going Supersonic",
+	"description":"Quickly & correctly answer 20 skill problems in a row (time limit depends on skill difficulty)",
+	"image":"going-supersonic.png",
+	"condition":"",
+	"group":"moon"
+}

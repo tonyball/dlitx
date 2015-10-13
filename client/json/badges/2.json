@@ -1,0 +1,8 @@
+{
+	"id":"2",
+	"name":"Express Yourself",
+	"description":"ปรับแต่งรูปและข้อมูลโปรไฟล์",
+	"image":"express-yourself.png",
+	"condition":"",
+	"group":"meteorite"
+}

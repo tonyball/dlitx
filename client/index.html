@@ -29,7 +29,18 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-view=""></div>
+    <div ng-include='"components/navbar/navbar.html"'></div>
+
+    <div ng-view></div>
+
+    <footer class="row footer-copyright">
+      <div class="text-left col s12 grey-text text-darken-2">
+        <p> การพัฒนาคุณภาพการศึกษาด้วยเทคโนโลยีสารสนเทศ (DLIT) โดยสำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน (สพฐ.) กระทรวงศึกษาธิการ สงวนลิขสิทธิ์ © 2558 </p>
+      </div>
+      <div class="center-align hide-on-small-only"> 
+        <img src="images/newkru-logo-footer.png", width="100")>
+      </div>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -98,5 +109,20 @@
           <script src="components/navbar/navbar.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->
+        <script>
+              
+          $(window).load(function(){
+            setTimeout(function(){
+              $("#loadingMask").hide();
+            }, 100);
+          });
+          $(document).ready(function(){
+            $(".button-collapse").sideNav({closeOnClick: true, menuWidth: 330});
+            $(".slide-out-user-button").sideNav({closeOnClick: true, menuWidth: 300, edge: 'right'});
+            $(".dropdown-button").dropdown({hover: false,belowOrigin: true});
+            $(".mini-dropdown-button").dropdown({hover: false,belowOrigin: true,constrain_width: false});
+            $(".noti-dropdown-button").dropdown({hover: true,belowOrigin: true});    
+          });
+        </script>
 </body>
 </html>

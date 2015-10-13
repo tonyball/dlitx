@@ -1,0 +1,8 @@
+{
+	"id":"20",
+	"name":"Nice Streak",
+	"description":"Correctly answer 20 problems in a row in a single skill",
+	"image":"nice-streak.png",
+	"condition":"",
+	"group":"meteorite"
+}

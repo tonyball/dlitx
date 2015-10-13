@@ -1,0 +1,8 @@
+{
+	"id":"10",
+	"name":"Thumbs Up",
+	"description":"Cast your first up vote for a helpful discussion post or program",
+	"image":"thumbs-up.png",
+	"condition":"",
+	"group":"meteorite"
+}

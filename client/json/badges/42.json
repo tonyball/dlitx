@@ -1,0 +1,8 @@
+{
+	"id":"42",
+	"name":"Ten to the Fifth",
+	"description":"Earn 100,000 energy points",
+	"image":"ten-to-fifth.png",
+	"condition":"",
+	"group":"moon"
+}

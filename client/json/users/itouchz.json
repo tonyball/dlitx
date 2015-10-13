@@ -1,0 +1,33 @@
+{
+		"id":"1",
+		"username":"itouchz",
+		"password":"password",
+		"title":"นาย",
+		"firstname":"ภัทร",
+		"lastname":"ไตรรัตน์",
+		"email":"patara.t@ku.th",
+		"school":"Kasetsart University",
+		"role":"0",
+		"gender":"Male",
+		"birthdate":"16/05/1994",
+		"tel":"+66877041922",
+		"education_level":"Bachelor",
+		"bio":"สวัสดี",
+		"location":"",
+		"created":"",
+		"modified":"",
+		"citizenid":"",
+		"avatar-group":"",
+		"avatar":"red4.png",
+		"classrooms":["MHM0041"],
+		"courses":["XTZ5218"],
+		"activities":[{}],
+		"badges":[
+			{"id":"1","status":1},
+			{"id":"2","status":1},
+			{"id":"30","status":1},
+			{"id":"3","status":0}
+
+		],
+		"scores":80
+}

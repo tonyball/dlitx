@@ -1,0 +1,8 @@
+{
+	"id":"46",
+	"name":"Sub-light Speed",
+	"description":"Quickly & correctly answer 42 skill problems in a row (time limit depends on skill difficulty)",
+	"image":"sublight-speed.png",
+	"condition":"",
+	"group":"earth"
+}

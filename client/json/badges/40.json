@@ -1,0 +1,8 @@
+{
+	"id":"40",
+	"name":"Fact Checker",
+	"description":"Have a clarification officially accepted",
+	"image":"fact-checker.png",
+	"condition":"",
+	"group":"moon"
+}

@@ -1,0 +1,32 @@
+{
+		"id":"11",
+		"username":"chanon",
+		"password":"password",
+		"title":"นาย",
+		"firstname":" ชานน",
+		"lastname":"รุ่งรัศมีเจริญ",
+		"email":"chanon.r@ku.th",
+		"school":"มหาวิทยาลัยเกษตรศาตร์",
+		"role":"0",
+		"gender":"ชาย",
+		"birthdate":"30/06/1994",
+		"tel":"+66819080654",
+		"education_level":"ปริญญาตรี",
+		"bio":"",
+		"location":"",
+		"created":"",
+		"modified":"",
+		"citizenid":"",
+		"avatar-group":"",
+		"avatar":"red1.png",
+		"classrooms":["MHM0041"],
+		"courses":["XTZ5218"],
+		"activities":[{}],
+		"badges":[
+			{"id":"1","status":1},
+			{"id":"2","status":1},
+			{"id":"3","status":0}
+
+		],
+		"scores":64
+}

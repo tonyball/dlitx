@@ -1,0 +1,8 @@
+{
+	"id":"41",
+	"name":"Awesome Listener",
+	"description":"Watch 1 hour of video in a single topic",
+	"image":"awesome-listener.png",
+	"condition":"",
+	"group":"moon"
+}

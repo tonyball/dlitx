@@ -1,0 +1,8 @@
+{
+	"id":"23",
+	"name":"Great Listener",
+	"description":"Watch 30 minutes of video in a single topic",
+	"image":"great-listener.png",
+	"condition":"",
+	"group":"meteorite"
+}

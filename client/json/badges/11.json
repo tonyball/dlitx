@@ -1,0 +1,8 @@
+{
+	"id":"11",
+	"name":"Thumbs Down",
+	"description":"Cast your first down vote for an unhelpful discussion post or program",
+	"image":"thumbs-down.png",
+	"condition":"",
+	"group":"meteorite"
+}

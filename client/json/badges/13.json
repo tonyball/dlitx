@@ -1,0 +1,8 @@
+{
+	"id":"13",
+	"name":"Researcher",
+	"description":"Reference a timestamp when answering a question on a video or program",
+	"image":"Researcher.png",
+	"condition":"",
+	"group":"meteorite"
+}

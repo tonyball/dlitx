@@ -1,0 +1,14 @@
+{
+	"id":"1",
+	"title":"คณิตศาสตร์ ม.4/1",
+	"code":"MHM0041",
+	"duration": 0,
+	"image":"maths-logo.jpg",
+	"username":"fscismi",
+	"teacher_name":"ธเนษฐ ชวาลสันตติ",
+	"subject":"คณิตศาสตร์",
+	"degree":"ง่าย",
+	"courses":["XTZ5218"],
+	"tags":["เซต", "คณิตศาสตร์"],
+	"students":["chanon","chatinya","chirapatr","chutipa","itouchz","jareewan","kantaporn","keeranat","kritawat","kritsada","kunlapat","natdecha","natthanon","thanwarat","tonyball"]
+}

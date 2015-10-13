@@ -1,34 +1,93 @@
-div.navbar.navbar-default.navbar-static-top(ng-controller='NavbarCtrl')
-  div.container
-    div.navbar-header
-      button.navbar-toggle(type='button', ng-click='isCollapsed = !isCollapsed')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='/') dlit
+nav.white
+  ul(ng-show="isStudent || isTeacher").right
+    li.notification-icon
+      a(href="/notifications",data-activates="notifications-dropdown").black-text.noti-dropdown-button
+        i.fa.fa-bell.fa-lg
+    li.hide-on-small-only
+      img(ng-src="images/acatars/{{user.avatar}}",alt="profile avatar",height="58").left.hide-on-med-and-down.user-avatar
+      a(href="#", fata-activates="user-dropdown").black-text.waves-effect.eaves-orange.dropdown-button {{user.firstname +" "+user.lastname}}
+        i.fa.fa-caret-down.fa-lg.right.arrow-dropdown
+    li.hide-on-med-and-up
+      i(data-activates="slide-out-user" style="margin-right:1rem; margin-left:1rem").waves-effect.waves-orange.slide-out-user-button.fa.fa-2x.fa-ellipsis-v.black-text
 
-    div#navbar-main.navbar-collapse.collapse(collapse='isCollapsed')
-      ul.nav.navbar-nav
-        li(ng-repeat='item in menu', ng-class='{active: isActive(item.link)}')
-          a(ng-href='{{item.link}}') {{item.title}}
+//- dropdown content
+ul.dropdown-content#user-dropdown
+  li
+    a(ng-href="/profile/{{user.username}}").black-text ข้อมูลส่วนตัว
+  li.divider
+  li
+    a(ng-href="/settings").black-text ตั้งค่า
+  li
+    a(ng-href="/help").black-text ความช่วยเหลือ
+  li.divider
+  li
+    a(ng-href="#").black-text ออกจากระบบ
+ul.side-nav#slide-out-user
+  li
+    a(ng-href="/profile/{{user.username}}").black-text ข้อมูลส่วนตัว
+  li.divider
+  li
+    a(ng-href="/settings").black-text ตั้งค่า
+  li
+    a(ng-href="/help").black-text ความช่วยเหลือ
+  li.divider
+  li
+    a(ng-href="#").black-text ออกจากระบบ
+ul.notifications.dropdown-content#notifications-dropdown
+  div.notifications-header
+    header.black-text แจ้งเตือน
+  li.divider
+  li
+    a.notify-item.black-text ไม่มีแจ้งเตือนใหม่
+//- end dropdown content
 
-        li(ng-show='isAdmin()', ng-class='{active: isActive("/admin")}')
-          a(href='/admin') Admin
+.top
+.bottom
+div.side-nav#side-nav
+  .grid-menu-item(ng-class="{ active: isActive('/dashboard')}" ng-click="hideSidenav()")
+    a(href="#/dashboard").dashboard
+      span กระดานหลัก
+  .grid-menu-item(ng-class="{ active: isActive('/profile')}" ng-click="hideSidenav()")
+    a(ng-href="#/profile/{{user.username}}").profile
+      span ข้อมูลส่วนตัว
+  .grid-menu-item(ng-class="{ active: isActive('/exams')}" ng-click="hideSidenav()")
+    a(href="#/exams").exams
+      span คลังข้อสอบ
+  .grid-menu-item(ng-class="{ active: isActive('/badges')}" ng-click="hideSidenav()")
+    a(href="#/badges").badges
+      span เหรียญ
+  .grid-menu-item(ng-show="isTeacher",ng-class="{ active: isActive('/manageclass')}" ng-click="hideSidenav()")
+    a(href="#/manageclass").manageclass
+      span จัดการห้องเรียน
+  .grid-menu-item(ng-show="isTeacher",ng-class="{ active: isActive('/classreport')}" ng-click="hideSidenav()")
+    a(href="#/classreport").classreport
+      span ภาพรวมนักเรียน
+  .grid-menu-item(ng-show="isTeacher",ng-class="{ active: isActive('/studentactivity')}" ng-click="hideSidenav()")
+    a(href="#/studentactivity").studentactivity
+      span งานนักเรียน
+  .grid-menu-item(ng-show="isTeacher", ng-class="{ active: isActive('/studentprogress')}" ng-click="hideSidenav()")
+    a(href="#/studentprogress").studentprogress
+      span พัฒนาการนักเรียน
 
-      ul.nav.navbar-nav.navbar-right
-        li(ng-hide='isLoggedIn()', ng-class='{active: isActive("/signup")}')
-          a(href='/signup') Sign up
 
-        li(ng-hide='isLoggedIn()', ng-class='{active: isActive("/login")}')
-          a(href='/login') Login
+a(href="" ng-click="showSidenav()" style="margin-left: 0.5em", ng-show="isStudent || isTeacher").show-on-large
+  i.fa.fa-2x.fa-th.black-text(style="font-size:1.75rem")
 
-        li(ng-show='isLoggedIn()')
-          p.navbar-text Hello {{ getCurrentUser().name }}
 
-        li(ng-show='isLoggedIn()', ng-class='{active: isActive("/settings")}')
-          a(href='/settings')
-            span.glyphicon.glyphicon-cog
+script.
+  $(window).load(function(){
+    setTimeout(function(){
+      $("#loadingMask").hide();
+    }, 100);
+  });
+  $(document).ready(function(){
+    $(".button-collapse").sideNav({closeOnClick: true, menuWidth: 330});
+    $(".slide-out-user-button").sideNav({closeOnClick: true, menuWidth: 300, edge: 'right'});
+    $(".dropdown-button").dropdown({hover: false,belowOrigin: true});
+    $(".mini-dropdown-button").dropdown({hover: false,belowOrigin: true,constrain_width: false});
+    $(".noti-dropdown-button").dropdown({hover: true,belowOrigin: true});    
+  });
 
-        li(ng-show='isLoggedIn()', ng-class='{active: isActive("/logout")}')
-          a(href='', ng-click='logout()') Logout
+
+
+

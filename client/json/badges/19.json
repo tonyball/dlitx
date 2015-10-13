@@ -1,0 +1,8 @@
+{
+	"id":"19",
+	"name":"Persistence",
+	"description":"Answer a problem correctly after having some trouble with a few problems and sticking with the skill",
+	"image":"perseverance.png",
+	"condition":"",
+	"group":"meteorite"
+}

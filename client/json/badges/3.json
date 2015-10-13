@@ -1,0 +1,8 @@
+{
+	"id":"3",
+	"name":"Picking Up Steam",
+	"description":"Quickly & correctly answer 5 skill problems in a row (time limit depends on skill difficulty)",
+	"image":"picking-up-steam.png",
+	"condition":"",
+	"group":"meteorite"
+}

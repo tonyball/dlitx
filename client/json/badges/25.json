@@ -1,0 +1,8 @@
+{
+	"id":"25",
+	"name":"Going Transonic",
+	"description":"Quickly & correctly answer 10 skill problems in a row (time limit depends on skill difficulty)",
+	"image":"going-transonic.png",
+	"condition":"",
+	"group":"moon"
+}
